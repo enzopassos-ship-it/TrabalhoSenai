@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cabecalhopagina{
+    background-color: #1a1a1a;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.containerprincipal{
+    display: flex;
+    flex: 1;
+}
+
+
+.colunaesquerda{
+    flex: 1;
+    background-color: #3a3b3c;
+    padding: 20px;
+}
+
+.topoesquerda{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+
+.containerlista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aparelhos{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 680px;
+    margin: 15px auto;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.campos label{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campos input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.botoescontainer {
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 680px;
+    margin: 25px auto 0 auto;
+
+}
+
+.botoescontainer button{
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+    transition: background 0.2s;
+}
+
+
+.btnadicionar {
+    background-color: #2b6cb0;
+    color: black;
+}
+
+.btncalcular{
+    background-color: #38a169;
+    color: black;
+}
+
+.colunadireita{
+    flex: 1;
+    background-color: #f7fafc;
+    padding: 40px 20px;
+}
+
+.topodireita{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d3748;
+}
+
+.containercartao{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto 20px auto;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h3{
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card .valorresultado{
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a202c;
+}
+
+.containerdetalhes {
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    min-height: 235px;
+    box-shadow:  0 2px 4px rgba(0,0,0,0.05);
+}
+
+.containerdetalhes h3{
+    font-size: 16px;
+    color: #2d3748;
+    margin-bottom: 15px;
+    border-bottom:  2px  solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+.containerdetalhes .textovazio{
+    color: #a0aec0;
+    font-style: italic;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#mensagemstatus{
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.rodapepagina{
+    background-color: #1a1a1a;
+    color:  #a0aec0;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .containerprincipal {
+        flex-direction: column;
+    }
+
+    .colunaesquerda, .colunadireita {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .aparelhos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .campos {
+        min-width: 120px;
+    }
+
+    .containercartao {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
