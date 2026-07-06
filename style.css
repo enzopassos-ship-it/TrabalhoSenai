@@ -115,7 +115,18 @@ body{
 .colunadireita{
     flex: 1;
     background-color: #f7fafc;
-    padding: 40px 20px;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.centralizarconteudo {
+    width: 100%;
+    max-width: 680px;
+
 }
 
 .topodireita{
