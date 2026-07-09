@@ -1,37 +1,3 @@
-   function adicionar() {
-
-        var lista = document.getElementById('containerlista');
-
-        var htmlnovo = `
-    <div class="aparelhos">
-        <div class="campos">
-            <label>Nome</label>
-            <input type="text" placeholder="Equipamento">
-        </div>
-        <div class="campos">
-            <label>Quantidade</label>
-            <input type="number" class="novoqtd" value="1">
-        </div>
-        <div class="campos">
-            <label>Watts</label>
-            <input type="number" class="novowatts" value="0">
-        </div>
-        <div class="campos">
-            <label>Horas/Dia:</label>
-            <input type="number" class="novohoras" value="0">
-        </div>
-        <div class="campos">
-            <label>Dias/Mês</label>
-            <input type="number" class="novodias" value="0">
-        </div>
-    </div>`
-
-        lista.innerHTML = lista.innerHTML + htmlnovo;
-
-
-    }
-
-    
 
 
     function calcular() {
@@ -101,23 +67,7 @@
 
         var consumoTotal = totalCpu + totalMonitor + totalSkfa + totalPs + totalGerador + totalOsc + totalAr + totalTv + totalLed;
 
-        var listaQtd = document.getElementsByClassName('novoqtd');
-        var listaWatts = document.getElementsByClassName('novowatts');
-        var listaHoras = document.getElementsByClassName('novohoras');
-        var listaDias = document.getElementsByClassName('novodias');
-
-
-        for (var i = 0; i < listaQtd.length; i++) {
-            var q = parseFloat(listaQtd[i].value) || 0;
-            var w = parseFloat(listaWatts[i].value) || 0;
-            var h = parseFloat(listaHoras[i].value) || 0;
-            var d = parseFloat(listaDias[i].value) || 0;
-
-            var totalnovo = (q * w * h * d) / 1000;
-
-            consumoTotal = consumoTotal + totalnovo;
-        }
-
+        
 
 
 
